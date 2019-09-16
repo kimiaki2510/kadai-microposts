@@ -50,7 +50,7 @@ class User < ApplicationRecord
   end
 
 #お気に入り登録判定
-  def  favpost?(micropost)
+  def favpost?(micropost)
     #お気に入り追加した投稿が、投稿一覧の投稿一覧のインスタンスmicropostを含むかどうかを判定
     self.favposts.include?(micropost)
   end
