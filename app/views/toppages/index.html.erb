@@ -5,8 +5,8 @@
         <div class="form-group">
           <%= f.text_area :content, class: 'form-control', rows: 5 %>
         </div>
-      <%= link_to 'Post', new_micropost_path, class: 'btn btn-primary btn-block'%>
-<% end %>
+        <%= f.submit '投稿', class: 'btn btn-primary' %>
+      <% end %>
     </aside>
     <div class="col-sm-8">
       <%= render 'microposts/microposts', microposts: @microposts %>
