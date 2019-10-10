@@ -11,6 +11,7 @@ class UsersController < ApplicationController
     counts(@user)
   end
 
+
   def new
     @user = User.new
   end
